@@ -1,0 +1,37 @@
+<ion-view title="POST"><ion-nav-bar class="bar-energized"></ion-nav-bar>
+  <ion-content class="padding">
+  
+      <ion-nav-buttons side="left">
+<a class="button ion-close-round" ng-click="Cancel(message)">  cancel</a>
+    </ion-nav-buttons>
+	
+	      <ion-nav-buttons side="right">
+<a class="button ion-ios7-upload-outline" ng-click="Post(message)"> Post</a>
+    </ion-nav-buttons>
+	
+<div class="list">
+  <label class="item item-input">
+    <input type="text" placeholder="Title (Required)" ng-model="message.Title">
+  </label>
+  <label class="item item-input">
+    <textarea placeholder="What you want to say?" rows="20" ng-model="message.Content"></textarea>
+  </label>
+</div>
+<div class="row">
+  <div class="col">
+    <a class="button icon ion-ios7-camera"></a>
+  </div>
+<div class="col">
+    <a class="button icon ion-pricetags"></a>
+  </div>
+  <div class="col">
+    <a class="button icon ion-ios7-settings"></a>
+  </div>
+  <div class="col">
+    <a class="button icon ion-unlocked"></a>
+  </div>
+  
+</div>
+
+  </ion-content>
+</ion-view>

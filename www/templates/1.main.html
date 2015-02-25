@@ -1,0 +1,55 @@
+<ion-view title="Main">
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+        Back
+      </ion-nav-back-button>
+
+    </ion-nav-bar>
+	
+<ion-side-menus>
+  <!-- Center content -->
+  <ion-side-menu-content edge-drag-threshold="true"
+  drag-content="true">
+  	    <ion-nav-buttons side="left">
+			<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+		</ion-nav-buttons>
+    <ion-content class="padding">
+    <div class="card"  ng-repeat="item in PostList">
+	  <div class="item item-text-wrap">
+		{{item}}
+	  </div>
+	</div>
+  </ion-content>
+  </ion-side-menu-content>
+
+  <!-- Left menu -->
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-stable">
+      <h1 class="title">Left</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close ng-click="login()">
+          Login
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/search">
+          Search
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/browse">
+          Browse
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/playlists">
+          Playlists
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+  <!-- Right menu -->
+  <ion-side-menu side="right">
+  </ion-side-menu>
+</ion-side-menus>
+
+
+
+</ion-view>

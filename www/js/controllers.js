@@ -27,7 +27,7 @@ angular.module('starter.controllers', ['pubnub.angular.service'])
 	$scope.Post = function(message){
 	$http({
 		  method  : 'POST',
-		  url     : 'http://127.0.0.1:5000',
+		  url     : 'https://evening-cliffs-3195.herokuapp.com',
 			transformRequest: function(obj) {
 				var str = [];
 				for(var p in obj)

@@ -38,7 +38,7 @@ angular.module('NEX', ['ionic', 'pubnub.angular.service', 'starter.controllers']
 
 
 	this.current_location_radar_init = function() {	
-		var url = "http://127.0.0.1:5000?callback=JSON_CALLBACK";
+		var url = "https://evening-cliffs-3195.herokuapp.com?callback=JSON_CALLBACK";
 		var request = $http.jsonp(url);		
 		 
 		request.success(function(data) {
